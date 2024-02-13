@@ -31,8 +31,6 @@ jobs:
             {{{item.title}}}
 
             {{{item.link}}}
-
-            {{{item.description}}}
           api-endpoint: 'https://mastodon.bot/'
           api-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           cache-file: ${{ github.workspace }}/mastofeedbot/cache.json
