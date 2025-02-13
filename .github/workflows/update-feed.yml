@@ -50,7 +50,7 @@ jobs:
         with:
           path: ${{ github.workspace }}/blueskyfeedbot
           key: bluesky-feed-cache-${{ steps.generate-key.outputs.cache-key }}
-          restore-keys: feed-cache-
+          restore-keys: bluesky-feed-cache-
       - name: Post to Bluesky
         uses: 'joschi/blueskyfeedbot@v0.0.3'
         with:
